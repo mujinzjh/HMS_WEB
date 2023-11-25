@@ -1,0 +1,68 @@
+#app {
+  #home_page {
+    .content-container {
+      height: 100vh;
+    }
+  }
+
+  .ant-layout {
+
+    height: 100%;
+    overflow: auto;
+
+    .ant-layout-sider {
+      // height: 100%;
+    }
+
+    .ant-layout-content {
+      display: inline-block;
+
+      .wrap-content {
+        background: #fff;
+        padding: 10px;
+        min-height: calc(100vh - 112px),
+      }
+    }
+  }
+
+  .content-enter-from,
+  .content-leave-to {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  // .content-leave-to,
+  // .content-enter-to {
+  //   overflow: hidden;
+  // }
+
+  .content-enter-to,
+  .content-leave-from {
+    opacity: 1;
+  }
+
+  .content-enter-active,
+  .content-leave-active {
+    // overflow: hidden;
+    transition: all .6s ease;
+  }
+}
+
+//按钮
+.ant-btn {
+  height: 36px;
+  width: max-content;
+
+  span {
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+.ant-form-item {
+  line-height: 36px;
+
+  .ant-input-affix-wrapper {
+    line-height: 36px;
+  }
+}
